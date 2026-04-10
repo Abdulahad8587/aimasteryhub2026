@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mastery Hub 2026 | Noida R&D Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00f2ff;
+            --secondary: #7000ff;
+            --bg: #030005;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Grotesk', sans-serif; }
+        
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            overflow-x: hidden;
+            background: radial-gradient(circle at 50% 50%, #1a0033 0%, #030005 100%);
+        }
+
+        /* Animated Background Particles */
+        .bg-glow {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.3; pointer-events: none; z-index: -1;
+        }
+
+        nav {
+            padding: 25px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            position: sticky; top: 0; z-index: 1000;
+        }
+
+        .logo { font-size: 1.8rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+        
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { 
+            font-size: clamp(3rem, 8vw, 6rem); 
+            line-height: 1;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .hero p { color: #aaa; font-size: 1.2rem; max-width: 600px; margin-bottom: 30px; }
+
+        .btn {
+            padding: 15px 40px;
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+            border: none; border-radius: 50px;
+            color: white; font-weight: bold; text-decoration: none;
+            box-shadow: 0 10px 20px rgba(112, 0, 255, 0.3);
+            transition: 0.3s;
+        }
+
+        .section-title {
+            text-align: center; margin: 100px 0 50px;
+            font-size: 2.5rem; letter-spacing: 5px; text-transform: uppercase;
+        }
+
+        .grid-container {
+            max-width: 1200px; margin: auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px; padding: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 20px;
+            transition: 0.5s;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover { transform: translateY(-10px); border-color: var(--primary); }
+
+        .card img {
+            width: 100%; height: 250px; object-fit: cover;
+            border-radius: 15px; margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .card h3 { color: var(--primary); margin-bottom: 10px; font-size: 1.5rem; }
+        .card p { color: #ccc; font-size: 0.9rem; }
+
+        .stats-bar {
+            background: linear-gradient(90deg, transparent, var(--card-bg), transparent);
+            padding: 50px 0; margin-top: 100px;
+            display: flex; justify-content: space-around; flex-wrap: wrap;
+        }
+
+        .stat-item h2 { font-size: 3rem; color: var(--primary); }
+        .stat-item p { color: #888; text-transform: uppercase; font-size: 0.8rem; }
+
+        footer {
+            padding: 50px; text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 100px; color: #555;
+        }
+
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
+        .floating { animation: float 4s ease-in-out infinite; }
+
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <nav>
+        <div class="logo">AI Mastery Hub</div>
+        <div style="font-size: 0.8rem; color: var(--primary);">EST. 2026 | NOIDA R&D</div>
+    </nav>
+
+    <header class="hero">
+        <div class="floating">
+            <i class="fas fa-microchip" style="font-size: 4rem; color: var(--primary); margin-bottom: 20px;"></i>
+        </div>
+        <h1>THE WEALTH ENGINE</h1>
+        <p>Harnessing the power of Artificial Intelligence to build sustainable hardware and software ecosystems in the heart of Noida.</p>
+        <a href="#explore" class="btn">Explore Lab</a>
+    </header>
+
+    <div id="explore" class="container">
+        <h2 class="section-title">Laboratory Insights</h2>
+        
+        <div class="grid-container">
+            <div class="card">
+                <img src="IMG_20260409_191244.png" alt="Hardware Lab">
+                <h3>Hardware R&D</h3>
+                <p>Noida R&D Innovations mein hum drone technology aur sensory hardware par research kar rahe hain.</p>
+            </div>
+
+            <div class="card">
+                <img src="IMG_20260409_190936.png" alt="AI Coding">
+                <h3>AI Programming</h3>
+                <p>Advanced neural networks aur Python-based automation frameworks jo scalability par focus karte hain.</p>
+            </div>
+
+            <div class="card">
+                <img src="IMG_20260409_191013.png" alt="Wealth Engine">
+                <h3>Monetization Hub</h3>
+                <p>AI-driven wealth engine jo financial data ko analyze karke strategy optimize karta hai.</p>
+            </div>
+
+            <div class="card">
+                <img src="IMG_20260409_190838.png" alt="AI Brain">
+                <h3>Deep Learning Core</h3>
+                <p>Humare models human-brain mimicking processing par kaam karte hain, jo complex logic ko fast process karte hain.</p>
+            </div>
+
+            <div class="card">
+                <img src="IMG_20260409_191111.png" alt="Creative AI">
+                <h3>Content Generation</h3>
+                <p>Educational content aur visual storytelling ke liye custom AI models ka upyog.</p>
+            </div>
+
+            <div class="card">
+                <img src="IMG_20260409_191302.png" alt="Human AI">
+                <h3>Strategic Innovation</h3>
+                <p>Human intelligence aur AI hardware ka perfect balance, humari Noida R&D lab ki pehchan.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-item"><h2>2026</h2><p>Launch Year</p></div>
+        <div class="stat-item"><h2>100%</h2><p>Innovation</p></div>
+        <div class="stat-item"><h2>6+</h2><p>Active Projects</p></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AI Mastery Hub | Developed by Abdulahad8587</p>
+        <p style="font-size: 0.7rem; margin-top: 10px;">Noida R&D Center - Empowering the next generation of Hardware Engineers</p>
+    </footer>
+
+</body>
+  </html>
+              
